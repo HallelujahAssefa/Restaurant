@@ -1,0 +1,214 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #f1e7da;
+    max-width: 1440px;
+    overflow-x: hidden;
+    margin: 0px;
+    font-family: 'Raleway', sans-serif;
+    height: 100vh;
+}
+/* header */
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 13px;
+    align-items: center;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    }
+    .heading{
+        font-weight: 700;
+        color: #ae483d;
+        letter-spacing: 5px;
+        font-size: 60px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+    ul{
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        margin-bottom: 0px;
+        margin-left: auto;
+       padding-bottom: 10px;
+    }
+    li{
+        list-style: none;
+        padding: 20px;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+        font-weight: 300;
+    }
+    button{
+        background-color: #ae483d;
+        padding: 16px 27px 16px 27px;
+        border: #ae483d;
+        color: #f1e7da;
+        font-size: calc((.9 - 1) * 1.2vw + 1rem); 
+        text-align: center;
+        height: 100%;
+        margin-bottom: 0px;
+    }
+    button a {
+       color: #f1e7da;
+    }
+
+/* form */
+
+.mainImage{
+    width: 1300px;
+    /* height: 1000px; */
+    /* object-fit: contain; */
+    height: calc(100vh - 90px);
+
+}
+.ban{
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./RESTAURANT/images/pexels-quark-studio-3201920.jpg") center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+ .ban h1{
+     padding-top: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: #f1e7da;
+}
+.card-content{
+    background: #f1e7da;
+    height: auto;
+    width: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.card-content h2{
+    text-align: center;
+    color: #ae483d;
+    padding: 25px 0 10px 0;
+    font-size: 26px;
+    font-weight: 500;
+    
+
+}
+.form-row{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    flex-direction: column;
+    color:#ae483d ;
+}
+form select, form input, form textarea{
+    display: block;
+    width: 100%;
+    margin: 15px 12px;
+    padding: 5px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #eee;
+    font-weight: 300;
+    align-self: center;
+    margin: 10px;
+}
+
+form input[type = submit]{
+    color: #fff;
+    background: #ae483d;
+    padding: 12px 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+form input[type = submit]:hover{
+    opacity: 0.9;
+}
+/* Footer */
+footer {
+    /* margin-top: 300px; */
+    background-color: #bc9667;
+   
+}
+.footerContainer {
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    padding: 50px 30px;
+    color: #f1e7da;
+}
+.f1 ,.f2 ,.f3 {
+    text-align: center;
+}
+.footerContainer p {
+    font-weight: 300;
+}
+
+.hours{
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+.menuBar{
+    display: none;
+}
+/* Media Queries */
+@media(max-width:500px){
+    header{
+        height: auto;
+    }
+    
+nav{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+nav ul {
+    flex-direction: column;
+    margin: auto;
+    display: none;
+
+
+}
+.menuBar {
+    display: block;
+    height: 48px;
+    background-color: #ae483d;
+    color: #f1e7da;
+    size: 500px;
+   box-sizing: 10px 20px 10px 20px;
+   padding: 10px;
+   margin-bottom: 10px; 
+   margin-top: 10px;
+   cursor: pointer;
+}
+nav ul li {
+    padding: 10px;
+}
+.hButton{
+    margin-bottom: 10px;
+    display: none;
+}
+
+}
+

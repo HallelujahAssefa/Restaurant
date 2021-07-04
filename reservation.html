@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reservation.css">
+</head>
+
+<body>
+    <header>
+
+        <nav>
+            <h1 class="heading">JAPÓN</h1>
+            <div class="menuBar">
+                <i class="fas fa-bars fa-2x"></i>
+            </div>
+            <ul class="navUL">
+                <li> <a href="./home.html">home</a></li>
+                <li> <a href="./home.html#ourStory">our story</a></li>
+                <li> <a href="./menu.html">menu</a></li>
+            </ul>
+            <button class="hButton"> <a href="#reservation">reservations</a></button>
+        </nav>
+    </header>
+    <div class="ban" id="reservation">
+        <h1>BOOK YOUR TABLE </h1>
+        <div class="card-container">
+            <div class="card-content">
+                <h2>Reservations</h2>
+                <form>
+                    <div class="form-row">
+                        <select name="days">
+                            <option value="day-select">Select Day</option>
+                            <option value="monday">Monday</option>
+                            <option value="tuesday">Tuesday</option>
+                            <option value="wednesday">Wednesday</option>
+                            <option value="thursday">Thursday</option>
+                            <option value="friday">Friday</option>
+                            <option value="saturday">Saturday</option>
+                            <option value="sunday">Sunday</option>
+                        </select>
+                        <select name="hours">
+                            <option value="hour-select">Select Time</option>
+                            <option value="5">5:00 PM</option>
+                            <option value="6">6:00 PM</option>
+                            <option value="7">7:00 PM</option>
+                            <option value="8">8:00 PM</option>
+                            <option value="9">9:00 PM</option>
+                            <option value="10">10:00 PM</option>
+                            <option value="11">11:00 PM</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <label for="name">Full Name</label>
+                        <input type="text" name="name">
+                        <label for="phoneNumber"> Phone Number</label>
+                        <input type="number" name="phoneNumber">
+                    </div>
+                    <div class="form-row">
+                        <label for="person">How many guests?</label>
+                        <input type="number" name="person" min="1">
+                        <label for="comments">Any special Requests?</label>
+                        <textarea name=" comments" cols="30" rows="5"></textarea>
+                        <input type="submit" value="BOOK TABLE">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+    <footer>
+        <div class="footerContainer">
+            <div class="f1">
+                <h4>dallas, texas</h4>
+                <p>123 Main Street</p>
+                <p>123-445-9903</p>
+            </div>
+            <div class="f2">
+                <h4>hours</h4>
+                <p>Sunday-Thursday</p>
+                <p class="hours">4:00PM - 9:30PM</p>
+                <p>Saturday-Friday</p>
+                <p class="hours">4:00PM - 11:30PM</p>
+            </div>
+            <div class="f3">
+                <h4>happy hour</h4>
+                <p>Daily</p>
+                <p>4:00PM-6:30PM</p>
+            </div>
+
+        </div>
+    </footer>
+    <script src="./reservation.js"></script>
+</body>
+
+</html>

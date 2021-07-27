@@ -1,9 +1,6 @@
-const mq = window.matchMedia("(max-width: 500px)");
-
-
+const mq = window.matchMedia("(max-width: 586px)");
 
 if(mq.matches){
-
 const ul = document.querySelector('.navUL');
 const button = document.querySelector('.hButton');
 const menuBar = document.querySelector('.menuBar');

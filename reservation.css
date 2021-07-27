@@ -172,43 +172,52 @@ footer {
     display: none;
 }
 /* Media Queries */
-@media(max-width:500px){
+@media(max-width:586px){
     header{
         height: auto;
     }
     
-nav{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-}
-nav ul {
-    flex-direction: column;
-    margin: auto;
-    display: none;
-
-
-}
-.menuBar {
-    display: block;
-    height: 48px;
-    background-color: #ae483d;
-    color: #f1e7da;
-    size: 500px;
-   box-sizing: 10px 20px 10px 20px;
-   padding: 10px;
-   margin-bottom: 10px; 
-   margin-top: 10px;
-   cursor: pointer;
-}
-nav ul li {
-    padding: 10px;
-}
-.hButton{
-    margin-bottom: 10px;
-    display: none;
-}
+    nav{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    nav h1{
+        align-self: center;
+    }
+    nav ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        display: none;
+        padding-left: 0;
+    }
+    nav ul li a{
+        align-self: center;
+    }
+    .menuBar {
+        display: block;
+        height: 48px;
+        background-color: #ae483d;
+        color: #f1e7da;
+        size: 500px;
+       box-sizing: 10px 20px 10px 20px;
+       padding: 10px;
+       margin-bottom: 10px; 
+       margin-top: 10px;
+       cursor: pointer;
+    }
+    nav ul li {
+        padding: 10px;
+    }
+    .hButton{
+        margin-bottom: 10px;
+        display: none;
+    }
+    .ban h1{
+        font-size: 20px;
+    }
 
 }
 

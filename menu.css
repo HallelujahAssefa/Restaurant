@@ -23,6 +23,7 @@ padding-bottom: 0px;
 margin-bottom: 0px;
 margin-left: 10px;
 margin-right: 10px;
+scroll-behavior: smooth;
 }
 .heading{
     font-weight: 700;
@@ -80,41 +81,50 @@ button a {
 }
 .menuUL{
     margin-left: 0px;
+    padding: 0;
 }
 .menuNav .menuUL .menuLI .menuA:focus{
     color: #ae483d;
     transition: 0.95;
+    scroll-behavior: smooth;
 }
 
 .appmenu {
 text-align: center;
 color:#ae483d;
 display: none;
+scroll-behavior: smooth;
 }
 .foodmenu{
     text-align: center;
     color:#ae483d;  
     display: none;
+    scroll-behavior: smooth;
 }
 
 .appmenu p{
     margin-top: 0px;
     font-weight: lighter;
+    scroll-behavior: smooth;
 }
 .appmenu h5 {
    margin-bottom: 5px;
+   scroll-behavior: smooth;
 }
 .foodmenu p{
     margin-top: 0px;
     font-weight: lighter;
+    scroll-behavior: smooth;
 }
 .foodmenu h5{
     margin-bottom: 5px; 
+    scroll-behavior: smooth;
 }
 .drinkmenu{
     display: none;
     text-align: center;
     color:#ae483d; 
+    scroll-behavior: smooth;
 }
 
 
@@ -188,4 +198,97 @@ nav ul li {
     display: none;
 }
 
+}
+/* 
+media query */
+
+@media screen and (max-width:655px) {
+    .heading{
+        font-size: 40px;
+    }
+    ul{
+        font-size: 16px;
+    }
+    .hButton{
+        font-size: 16px;
+        padding: 10px 23px 10px 23px;
+    }
+    .menuH{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .menuNav{
+        padding-top: 0;
+    }
+    .foodmenu p{
+        font-size: 15px;
+    }
+}
+
+@media(max-width:586px){
+    header{
+        height: auto;
+    }
+    
+    .heading{
+        font-size: 40px;
+    }
+    .nav{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav h1{
+        align-self: center;
+    }
+    .nav ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        display: none;
+        padding-left: 0;
+    }
+    .nav ul li a{
+        align-self: center;
+    }
+    .menuBar {
+        display: block;
+        height: 48px;
+        background-color: #ae483d;
+        color: #f1e7da;
+        size: 500px;
+       box-sizing: 10px 20px 10px 20px;
+       padding: 10px;
+       margin-bottom: 10px; 
+       margin-top: 10px;
+       cursor: pointer;
+    }
+    .nav ul li {
+        padding: 10px;
+    }
+    .hButton{
+        margin-bottom: 10px;
+        display: none;
+    }
+    #main .menuNav{
+        display: flex;
+        flex-direction: row;
+    }
+    .menuUL{
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+.menuH{
+    font-size: 45px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}   
+.footerContainer{
+        padding: 0px;
+    
+}
 }

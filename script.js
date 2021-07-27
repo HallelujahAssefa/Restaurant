@@ -1,4 +1,4 @@
-const mq = window.matchMedia("(max-width: 500px)");
+const mq = window.matchMedia("(max-width: 586px)");
 
 if(mq.matches){
 const ul = document.querySelector('.navUL');
@@ -19,3 +19,4 @@ function showNav(){
 
 menuBar.addEventListener('click', showNav)
 }
+

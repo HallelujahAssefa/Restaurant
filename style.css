@@ -9,6 +9,7 @@ body{
     margin: 0px;
     font-family: 'Raleway', sans-serif;
     height: 1500px;
+    scroll-behavior: smooth;
 }
 
 /* header  */
@@ -23,6 +24,7 @@ padding-bottom: 0px;
 margin-bottom: 0px;
 margin-left: 10px;
 margin-right: 10px;
+scroll-behavior: smooth;
 }
 .heading{
     font-weight: 700;
@@ -40,6 +42,7 @@ ul{
     margin-bottom: 0px;
     margin-left: auto;
    padding-bottom: 10px;
+   scroll-behavior: smooth;
 }
 
 li{
@@ -48,10 +51,17 @@ li{
     text-align: center;
     margin-bottom: 0px;
 }
+
 a{
     text-decoration: none;
     color: black;
     font-weight: 300;
+}
+li:hover, li a:hover{
+    text-decoration: underline;
+    transition: text-decoration .5s;
+    color: #ae483d;
+    scroll-behavior: smooth;
 }
 button{
     background-color: #ae483d;
@@ -62,11 +72,12 @@ button{
     text-align: center;
     height: 100%;
     margin-bottom: 0px;
-
-
 }
 button a {
     color: #f1e7da;   
+}
+.hButton:hover{
+    opacity: .7;
 }
 
 
@@ -94,6 +105,7 @@ main {
     color: #ae483d;
     font-size: 50px;
     margin-bottom: 0px;
+    scroll-behavior: smooth;
 }
 .famous{
     text-align: center;
@@ -110,14 +122,16 @@ main {
 }
 
 .ourStoryP {
-    padding: 40px;
+    padding: 20px 60px;
     line-height: 25px;
     background-color: #ae483d;
     color: #f1e7da;
     text-align: center;
-    height: 300px;
+    height: 250px;
     width: 100%;
-    padding-top: 90px;
+    /* padding-top: 90px; */
+    scroll-behavior: smooth;
+
 
 }
 
@@ -137,8 +151,25 @@ main {
 .gallery2 {
    margin-top: 78px;
 }
+.seemenuB{
+    text-align: center;
+}
+.seemore{
+    height: initial;
+    cursor: pointer;
+    width: 50vw;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+}
 
+.seemore:hover{
+    opacity: .7;
+}
 
+.bold{
+    font-weight: bold;
+    font-size: 20px;
+}
 /* footer */
 footer {
     margin-top: 50px;
@@ -168,23 +199,120 @@ footer {
 }
 
 /* media query  */
-@media(max-width:500px){
+@media screen and (max-width:1025px){
+ nav{
+     padding-top: 8px;
+ }
+    .heading{
+        font-size: 50px;
+    }
+
+ .mainImage{
+     width: 100vw;
+ }
+ .footerContainer{
+     padding: 30px 20px 30px 20px ;
+ }
+}
+@media screen and (max-width:769px){
+
+    #ourStory {
+        font-size: 45px;
+        margin-top: 30px;
+        padding-top: 0px;
+    }
+    .famous{
+        font-size: 45px;
+    }
+    .ourStoryP p{
+        font-size: 15px;
+    }
+    .gallery{
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .gallery1 img, .gallery3 img {
+        width: 180px;
+    }
+    .gallery2 img{
+        width: 265px;
+    }
+    .footerContainer{
+        padding: 25px 15px 25px 15px;
+    }
+    .seemore{
+      width: 30vw;
+    }
+
+}
+@media screen and (max-width:655px) {
+    body{
+        width: 100vw;
+        overflow-x: hidden;
+    }
+    .heading{
+        font-size: 40px;
+    }
+    ul{
+        font-size: 16px;
+    }
+    .hButton{
+        font-size: 16px;
+        padding: 10px 23px 10px 23px;
+    }
+    .mainImage{
+        width: 100vw;
+    }
+    #ourStory{
+        font-size:40px ;
+    }
+    .famous{
+        font-size: 40px;
+    }
+    .ourStoryP p{
+        font-size: 12px;
+    }
+    .gallery{
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    .gallery1 img, .gallery3 img {
+        width: 150px;
+    }
+    .gallery2 img{
+        width: 200px;
+    }
+    .footerContainer{
+        padding: 15px 10px 15px 10px;
+    }
+}
+
+@media(max-width:586px){
     header{
         height: auto;
     }
     
+    .heading{
+        font-size: 40px;
+    }
 nav{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+}
+nav h1{
+    align-self: center;
 }
 nav ul {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: auto;
     display: none;
-
-
+    padding-left: 0;
+}
+nav ul li a{
+    align-self: center;
 }
 .menuBar {
     display: block;
@@ -205,5 +333,55 @@ nav ul li {
     margin-bottom: 10px;
     display: none;
 }
+#ourStory{
+    margin-top: 20px;
+ font-size: 35px;
+ padding-bottom: 12px;
+}
+.famous{
+    margin-top: 20px;
+    font-size: 35px;
+}
+.ourStoryP p{
+    font-size: 10px;
+}
+.gallery h2{
+    font-size: 20px;
+}
+}
 
-
+@media screen and (max-width:525px){
+    .ourStoryP{
+        height: auto;
+        width: auto;
+    }
+    .gallery{
+  display: grid;
+  grid-template-columns: none;
+        grid-template-rows: repeat(3, 1fr);
+    }
+.gallery h2{
+    padding-top: 10px;
+    font-size: 20px;
+    margin: 0;
+}
+.gallery p{
+    font-size: 13px;
+    padding: 0px 30px 0px 30px;
+}
+.gallery2{
+  padding-top: 30px;
+  margin-top: 0px;
+}
+.gallery1, .gallery2, .gallery3{
+    margin-right: 0px;
+}
+.seemenuB .seemore{
+    width: auto;
+    margin-top: 10px;
+    font-size: 15px;
+}
+.footerContainer{
+    padding-top: 0px;
+}
+}

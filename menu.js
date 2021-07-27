@@ -4,10 +4,10 @@ const drinkNav = document.querySelector('#drinkNav');
 const app = document.querySelector("#app");
 const entree = document.querySelector('#entree');
 const drink = document.querySelector('#drink');
+const seemore = document.querySelector('button .seemore')
 
-function clickedEntree(e){
-    console.log(e.currentTarget)
-    if(e.currentTarget = entreeNav){
+function clickedEntree(e){ 
+    if(e.currentTarget = entreeNav){ 
         entree.style.display= "inline";
         app.style.display= "none";
         drink.style.display= "none";
@@ -29,10 +29,9 @@ function clickedDrink(e){
     } 
 }
 
-const mq = window.matchMedia("(max-width: 500px)");
+const mq = window.matchMedia("(max-width: 586px)");
 
 if(mq.matches){
-
 const ul = document.querySelector('.navUL');
 const button = document.querySelector('.hButton');
 const menuBar = document.querySelector('.menuBar');
@@ -55,3 +54,4 @@ menuBar.addEventListener('click', showNav)
 appetizerNav.addEventListener('click', clickedApp);
 entreeNav.addEventListener('click', clickedEntree);
 drinkNav.addEventListener('click',clickedDrink);
+

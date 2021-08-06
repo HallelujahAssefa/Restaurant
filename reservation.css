@@ -208,6 +208,9 @@ footer {
        margin-top: 10px;
        cursor: pointer;
     }
+    .navUL.active{
+        display: block;
+    }
     nav ul li {
         padding: 10px;
     }

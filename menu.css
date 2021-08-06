@@ -176,7 +176,6 @@ nav ul {
     margin: auto;
     display: none;
 
-
 }
 .menuBar {
     display: block;
@@ -189,6 +188,9 @@ nav ul {
    margin-bottom: 10px; 
    margin-top: 10px;
    cursor: pointer;
+}
+.navUL.active{
+    display: block;
 }
 nav ul li {
     padding: 10px;
@@ -291,4 +293,7 @@ media query */
         padding: 0px;
     
 }
+}
+@media screen and (max-width:525px){
+ 
 }
